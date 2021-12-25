@@ -45,14 +45,14 @@ class Post(BaseModel):
     likes: List[str]
     comments : List[Comment]
 
-
 ###############################################################################################################
 # MAIN
 ###############################################################################################################
 if __name__ == "__main__":
     
     comments = [
-        Comment(author="johndoe", comment="This is a comment!",likes=2)
+        Comment(author="johndoe", comment="This is a comment!",likes=2),
+        Comment(author="johnPeter", comment="This is a shit!",likes=15)
         ]
 
     post = Post(
@@ -67,3 +67,4 @@ if __name__ == "__main__":
         )
 
     print(post)
+    print(post.comments[0].author)

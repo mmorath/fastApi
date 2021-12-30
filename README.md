@@ -1,4 +1,4 @@
-# deephub
+# FASTAPI
 
-* docker container mit datenbank
-* docker der die infos abzieht vom omlox hub
+* https://fastapi.tiangolo.com/deployment/docker/
+* https://testdriven.io/blog/fastapi-docker-traefik/

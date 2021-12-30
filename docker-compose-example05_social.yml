@@ -20,6 +20,8 @@ services:
         hostname: example05_social
         container_name: example05_social
         restart: unless-stopped
+        ports: 
+        - "8000:8000"
         networks:
             ot-link-net:
 

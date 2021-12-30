@@ -20,6 +20,8 @@ services:
         hostname: example01
         container_name: example01
         restart: unless-stopped
+        ports: 
+        - "8000:8000"
         networks:
             ot-link-net:
 

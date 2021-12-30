@@ -17,9 +17,14 @@ services:
     # broker to communicate to deephub.io       
     example04_car:
         build: ./example04_car
+        command: uvicorn app.main:app --host 0.0.0.0
+        volumes:
+        - .:/app
         hostname: example04_car
         container_name: example04_car
         restart: unless-stopped
+        ports: 
+        - "8000:8000"
         networks:
             ot-link-net:
 

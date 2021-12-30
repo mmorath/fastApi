@@ -41,5 +41,9 @@ setuptools    40.8.0
 ```bash 
 pip freeze > requirements.txt
 ```
-
+## How start app
+```bash 
+source venv/bin/activate
+uvicorn main:app --reload
+```
 

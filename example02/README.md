@@ -52,3 +52,12 @@ pip           18.1
 pkg-resources 0.0.0  
 setuptools    40.8.0 
 ```
+## How to save the current installed packages to a requirement file
+```bash 
+pip freeze > requirements.txt
+```
+## How start app
+```bash 
+source venv/bin/activate
+uvicorn main:app --reload
+```
